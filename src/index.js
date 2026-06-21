@@ -5,11 +5,11 @@ const navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
-    navbar.classList.add("bg-white/80", "dark:bg-custom-black/80", "backdrop-blur-md", "shadow-md", "border-gray-200/20", "dark:border-white/5");
-    navbar.classList.remove("bg-white/95", "dark:bg-custom-black/95", "border-transparent");
+    navbar.classList.add("bg-white/80", "backdrop-blur-md", "shadow-md", "border-gray-200/20");
+    navbar.classList.remove("bg-white/95", "border-transparent");
   } else {
-    navbar.classList.remove("bg-white/80", "dark:bg-custom-black/80", "backdrop-blur-md", "shadow-md", "border-gray-200/20", "dark:border-white/5");
-    navbar.classList.add("bg-white/95", "dark:bg-custom-black/95", "border-transparent");
+    navbar.classList.remove("bg-white/80", "backdrop-blur-md", "shadow-md", "border-gray-200/20");
+    navbar.classList.add("bg-white/95", "border-transparent");
   }
 });
 
